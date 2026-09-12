@@ -1,9 +1,6 @@
 # Temporal Misalignment in Multichannel Time Series
 
-Research code accompanying the paper. The experiments impose temporal delays on
-one sensor group while keeping the remaining channels fixed. They measure the
-resulting classifier accuracy, compute the paper's label-free MDL alignment
-cost, and compare MDL correction with SyncNet.
+Research code accompanying the paper "Diagnosing Temporal Misalignment in Multichannel Time-Series Classification with Minimum Description Length". The experiments impose temporal delays on one sensor group while keeping the remaining channels fixed. They measure the resulting classifier accuracy, compute the paper's label-free MDL alignment cost, and compare MDL correction with SyncNet.
 
 ## Setup
 
@@ -142,3 +139,11 @@ padding cannot influence the comparison.
 There is exactly one `configs/<dataset>.yml` per dataset. It contains the data
 source or synthetic generator, sensor groups, non-negative lag grid, model
 list, and training parameters.
+
+
+
+# Cite our paper
+
+# Acknowledgement
+
+This repository was (privately) forked from Michael Frichert (@unpractical) and then made publicly available with his consent. 

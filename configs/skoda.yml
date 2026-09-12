@@ -1,0 +1,97 @@
+monster_name: Skoda
+models: [cnn, resnet, late_fusion, magnitude_cnn, syncnet]
+folds: all
+seed: 42
+eval_batch_size: 2048
+training:
+  val_frac: 0.15
+  max_epochs: 100
+  patience: 10
+  batch_size: 256
+  lr: 1.0e-4
+  num_workers: 4
+  precision: 32-true
+  p_misalign: 0.0
+sensor_groups:
+  s00:
+  - 0
+  - 1
+  - 2
+  s01:
+  - 3
+  - 4
+  - 5
+  s02:
+  - 6
+  - 7
+  - 8
+  s03:
+  - 9
+  - 10
+  - 11
+  s04:
+  - 12
+  - 13
+  - 14
+  s05:
+  - 15
+  - 16
+  - 17
+  s06:
+  - 18
+  - 19
+  - 20
+  s07:
+  - 21
+  - 22
+  - 23
+  s08:
+  - 24
+  - 25
+  - 26
+  s09:
+  - 27
+  - 28
+  - 29
+  s10:
+  - 30
+  - 31
+  - 32
+  s11:
+  - 33
+  - 34
+  - 35
+  s12:
+  - 36
+  - 37
+  - 38
+  s13:
+  - 39
+  - 40
+  - 41
+  s14:
+  - 42
+  - 43
+  - 44
+  s15:
+  - 45
+  - 46
+  - 47
+  s16:
+  - 48
+  - 49
+  - 50
+  s17:
+  - 51
+  - 52
+  - 53
+  s18:
+  - 54
+  - 55
+  - 56
+  s19:
+  - 57
+  - 58
+  - 59
+lags: [0, 1, 2, 3, 5, 8, 10, 15, 20]
+window_length: 100

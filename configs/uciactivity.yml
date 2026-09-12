@@ -1,0 +1,28 @@
+monster_name: UCIActivity
+models: [cnn, resnet, late_fusion, magnitude_cnn, syncnet]
+folds: all
+seed: 42
+eval_batch_size: 2048
+training:
+  val_frac: 0.15
+  max_epochs: 100
+  patience: 10
+  batch_size: 256
+  lr: 1.0e-4
+  num_workers: 4
+  precision: 32-true
+  p_misalign: 0.0
+sensor_groups:
+  accel:
+  - 0
+  - 1
+  - 2
+  - 6
+  - 7
+  - 8
+  gyro:
+  - 3
+  - 4
+  - 5
+lags: [0, 1, 2, 3, 5, 7, 10, 15, 20, 25, 30, 36, 42, 48, 56, 64]
+window_length: 128

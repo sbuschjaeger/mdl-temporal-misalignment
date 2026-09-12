@@ -1,0 +1,54 @@
+monster_name: DREAMERV
+models: [cnn, resnet, late_fusion, magnitude_cnn, syncnet]
+folds: all
+seed: 42
+eval_batch_size: 2048
+training:
+  val_frac: 0.15
+  max_epochs: 100
+  patience: 10
+  batch_size: 256
+  lr: 1.0e-4
+  num_workers: 4
+  precision: 32-true
+  p_misalign: 0.0
+sensor_groups:
+  ch_00:
+  - 0
+  ch_01:
+  - 1
+  ch_02:
+  - 2
+  ch_03:
+  - 3
+  ch_04:
+  - 4
+  ch_05:
+  - 5
+  ch_06:
+  - 6
+  ch_07:
+  - 7
+  ch_08:
+  - 8
+  ch_09:
+  - 9
+  ch_10:
+  - 10
+  ch_11:
+  - 11
+  ch_12:
+  - 12
+  ch_13:
+  - 13
+lags:
+- 0
+- 2
+- 5
+- 8
+- 12
+- 18
+- 25
+- 35
+- 50
+window_length: 256

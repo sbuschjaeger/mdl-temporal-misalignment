@@ -1,0 +1,82 @@
+monster_name: PAMAP2
+models: [cnn, resnet, late_fusion, magnitude_cnn, syncnet]
+folds: all
+seed: 42
+eval_batch_size: 2048
+training:
+  val_frac: 0.15
+  max_epochs: 100
+  patience: 10
+  batch_size: 256
+  lr: 1.0e-4
+  num_workers: 4
+  precision: 32-true
+  p_misalign: 0.0
+sensor_groups:
+  hr:
+  - 0
+  hand:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  chest:
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  ankle:
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+lags:
+- 0
+- 1
+- 2
+- 3
+- 5
+- 8
+- 10
+- 15
+- 20
+window_length: 100

@@ -143,6 +143,18 @@ list, and training parameters.
 
 
 # Cite our paper
+A preprint of our paper is available on [arXiv](https://arxiv.org/abs/2609.14595).
+
+```bibtex
+@article{BuschjaegerFKC2026,
+  title={Diagnosing Temporal Misalignment in Multichannel Time-Series Classification with Minimum Description Length}, 
+  author={Sebastian Buschjäger and Michael Frichert and Daniel Kuhe and Jian-Jia Chen},
+  year={2026},
+  eprint={2609.14595},
+  url={https://arxiv.org/abs/2609.14595},
+  doi={https://doi.org/10.48550/arXiv.2609.14595},
+}
+```
 
 # Acknowledgement
 
